@@ -14,6 +14,6 @@ MTG33 = Client(
 )
 
 
-print("JOIN MTG33_BOTZ")
+print("BOT IS READY")
 
 MTG33.run()
