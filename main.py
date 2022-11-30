@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 API_ID = "28061494"
@@ -16,7 +17,9 @@ MTG33 = Client(
 
 @MTG33.on_message(filters.command("start"))
 async def start_cmd(Client, message):
-    await message.reply_text("Hello i am bot created by MTG33 type hel for more information ")
+    await message.reply_photo(
+        photo="https://telegra.ph/ttelegram-11-30"
+        caption="Hello i am a bot by MTG33 type /help for more information"
 
 @MTG33.on_message(filters.command("help"))
 async def help_cmd(Client, message):
