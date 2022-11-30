@@ -16,11 +16,11 @@ MTG33 = Client(
 
 @MTG33.on_message(filters.command("start"))
 async def start_cmd(Client, message):
-    print("Hello i am a bot i am in developing by MTG33 boss for mor details type help")
+    await message.reply_text("Hello i am bot created by MTG33 type hel for more information ")
 
 @MTG33.on_message(filters.command("help"))
 async def help_cmd(Client, message):
-    print("developer contact : t.me/SAITAMA_SENSEI_BOSS ")
+    await message.reply_text("developer contact : t.me/MTG33")
 
 
 
