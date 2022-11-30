@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 
 
-API_ID = ""
-API_HASH = ""
-BOT_TOKEN = ""
+API_ID = "28061494"
+API_HASH = "5f7c625731e89fa00a6b3906e1f894a7"
+BOT_TOKEN = "5834355850:AAEagWKMd80wfOk5Y__z7jq96eZ4y-VgbdM"
 
 
 MTG33 = Client(
@@ -18,8 +18,8 @@ MTG33 = Client(
 async def start_cmd(Client, message):
     print("Hello i am a bot i am in developing by MTG33 boss for mor details type help")
 
-@MTG33.on_message(filters.command("start"))
-async def start_cmd(Client, message):
+@MTG33.on_message(filters.command("help"))
+async def help_cmd(Client, message):
     print("developer contact : t.me/SAITAMA_SENSEI_BOSS ")
 
 
