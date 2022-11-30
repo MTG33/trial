@@ -1,1 +1,3 @@
-# trial
+# Trial
+
+THIS BOT IN DEVELOPING
