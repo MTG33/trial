@@ -14,13 +14,17 @@ MTG33 = Client(
     bot_token=BOT_TOKEN
 )
 
+START_BUTTONS = [[
+    InlineKeyboardButton("🔰JOIN CHANNEL FOR REPO🔰 ", url="t.me/MTG33CHANNEL")
+    ]]
 
 @MTG33.on_message(filters.command("start"))
 async def start_cmd(Client, message):
     await message.reply_photo(
         photo="https://telegra.ph/ttelegram-11-30"
         caption="Hello i am a bot by MTG33 type /help for more information"
-
+        reply_markup=InlineKeyboardMarkup(START_BUTTONS)
+        )
 @MTG33.on_message(filters.command("help"))
 async def help_cmd(Client, message):
     await message.reply_text("developer contact : t.me/MTG33")
