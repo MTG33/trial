@@ -15,7 +15,7 @@ MTG33 = Client(
 )
 
 START_BUTTONS = [[
-    InlineKeyboardButton("🔰JOIN CHANNEL FOR REPO🔰 ", url="t.me/MTG33CHANNEL")
+    InlineKeyboardButton("🔰 JOIN CHANNEL FOR REPO 🔰 ", url="t.me/MTG33CHANNEL")
     ]]
 
 @MTG33.on_message(filters.command("start"))
