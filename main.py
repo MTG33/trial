@@ -20,7 +20,7 @@ START_BUTTONS = [[
 @MTG33.on_message(filters.command("start"))
 async def start_cmd(Client, message):
     await message.reply_photo(
-        photo="https://telegra.ph/ttelegram-11-30"
+        photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
         caption=f"""Hello {message.from_user.mention}.i am a bot by MTG33 type /help for more information"""
         reply_markup=InlineKeyboardMarkup(START_BUTTONS)
         )
@@ -49,6 +49,6 @@ I am bot created @MTG33
 
 
 
-print("BOT IS READY")
+print(" © BOT DEPLOYED © ")
 
 MTG33.run()
