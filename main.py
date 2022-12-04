@@ -4,9 +4,9 @@ from pyrogram.types import CallbackQuery
 
 
 
-API_ID = int(environ.get('API_ID', "28061494"))
-API_HASH = environ.get('API_HASH', "5f7c625731e89fa00a6b3906e1f894a7")
-BOT_TOKEN = environ.get('BOT_TOKEN', "5834355850:AAEagWKMd80wfOk5Y__z7jq96eZ4y-VgbdM")
+API_ID = "28061494"
+API_HASH = "environ.get('API_HASH', "5f7c625731e89fa00a6b3906e1f894a7"
+BOT_TOKEN = "5834355850:AAEagWKMd80wfOk5Y__z7jq96eZ4y-VgbdM"
 
 MTG33 = Client(
     name="MTG33",
@@ -25,6 +25,7 @@ async def start_cmd(Client, message):
         photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
         caption=f"""Hello {message.from_user.mention}.i am a bot by MTG33 type /help for more information"""
         reply_markup=InlineKeyboardMarkup(START_BUTTONS)
+    )
         
 
 HELP_BUTTONS = [[
