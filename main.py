@@ -1,5 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import CallbackQuery
+
 
 
 API_ID = int(environ.get('API_ID', "28061494"))
@@ -23,7 +25,7 @@ async def start_cmd(Client, message):
         photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
         caption=f"""Hello {message.from_user.mention}.i am a bot by MTG33 type /help for more information"""
         reply_markup=InlineKeyboardMarkup(START_BUTTONS)
-        )
+        
 
 HELP_BUTTONS = [[
     InlineKeyboardButton("📍 OWNER 📍 ", url="t.me/MTG33")
