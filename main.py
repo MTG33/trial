@@ -32,6 +32,7 @@ HELP_BUTTONS = [[
 async def help_cmd(Client, message):
     await message.reply_text("developer contact : t.me/MTG33")
         reply_markup=InlineKeyboardMarkup(HELP_BUTTONS)
+        )
 
 ABOUT_BUTTONS = [[
     InlineKeyboardButton("📢 Join channel for Repo 📢 ", url="t.me/MTG33BOTZ")
@@ -42,7 +43,9 @@ async def about_cmd(Client, message):
         photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
         caption=f"""Hello {message.from_user.mention} 
 I am bot created @MTG33 
-
+"""
+        reply_markup=InlineKeyboardMarkup(ABOUT_BUTTONS)
+        )
 
 
 
