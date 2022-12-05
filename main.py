@@ -44,9 +44,7 @@ ABOUT_BUTTONS = [[
 async def about_cmd(Client, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
-        caption=f"""Hello {message.from_user.mention} 
-I am bot created @MTG33 
-"""
+        caption=f"""Hello {message.from_user.mention} I am bot created by @MTG33  """
         reply_markup=InlineKeyboardMarkup(ABOUT_BUTTONS)
         )
 
