@@ -35,7 +35,7 @@ HELP_BUTTONS = [[
 async def help_cmd(Client, message):
     await message.reply_text("developer contact : t.me/MTG33")
         reply_markup=InlineKeyboardMarkup(HELP_BUTTONS)
-        )
+
 
 ABOUT_BUTTONS = [[
     InlineKeyboardButton("📢 Join channel for Repo 📢 ", url="t.me/MTG33BOTZ")
