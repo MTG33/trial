@@ -10,8 +10,8 @@ BOT_TOKEN = "5834355850:AAEagWKMd80wfOk5Y__z7jq96eZ4y-VgbdM"
 
 MTG33 = Client(
     name="MTG33",
-    api_id=API_ID
-    api_hash=API_HASH
+    api_id=API_ID,
+    api_hash=API_HASH,
     bot_token=BOT_TOKEN
 )
 
