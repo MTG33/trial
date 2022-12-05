@@ -16,37 +16,29 @@ MTG33 = Client(
 )
 
 START_BUTTONS = [[
-    InlineKeyboardButton("📢JOIN CHANNEL FOR REPO📢 ", url="t.me/MTG33CHANNEL")
-    ]]
+   InlineKeyboardButton("📢 JOIN CHANNEL FOR REPO", url="t.me/MTG33BOTZ"
+]]
 
 @MTG33.on_message(filters.command("start"))
-async def start_cmd(Client, message):
+async def start_cmd(client, message):
     await message.reply_photo(
-        photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
-        caption="Hello {message.from_user.mention}.i am a bot by MTG33 type /help for more information"
+        photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg",
+        caption="Hey !! {message.from_user.mention} ... I am a pyrogram Bot Created By @MTG33 ",
         reply_markup=InlineKeyboardMarkup(START_BUTTONS)
     )
-        
-
-HELP_BUTTONS = [[
-    InlineKeyboardButton("📍 OWNER 📍 ", url="t.me/MTG33")
-    ]]
-@MTG33.on_message(filters.command("help"))
-async def help_cmd(Client, message):
-    await message.reply_text("developer contact : t.me/MTG33")
-        reply_markup=InlineKeyboardMarkup(HELP_BUTTONS)
-
 
 ABOUT_BUTTONS = [[
-    InlineKeyboardButton("📢 Join channel for Repo 📢 ", url="t.me/MTG33BOTZ")
-    ]]
+   InlneKeyboardButton("🔥 OWNER 🔥", url="t.me/MTG33"
+]]
+
 @MTG33.on_message(filters.command("about"))
-async def about_cmd(Client, message):
+async def about_cmd(client, message):
     await message.reply_photo(
-        photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg"
-        caption=f"""Hello {message.from_user.mention} I am bot created by @MTG33  """
+        photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg",
+        caption="MY REPO: github/MTG33/trial \n MY DEPLOYER : @MTG33 👇",
         reply_markup=InlineKeyboardMarkup(ABOUT_BUTTONS)
-        )
+    )
+
 
 
 
