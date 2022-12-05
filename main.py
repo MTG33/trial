@@ -5,7 +5,7 @@ from pyrogram.types import CallbackQuery
 
 
 API_ID = "28061494"
-API_HASH = "environ.get('API_HASH', "5f7c625731e89fa00a6b3906e1f894a7"
+API_HASH = "5f7c625731e89fa00a6b3906e1f894a7"
 BOT_TOKEN = "5834355850:AAEagWKMd80wfOk5Y__z7jq96eZ4y-VgbdM"
 
 MTG33 = Client(
