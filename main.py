@@ -21,8 +21,9 @@ START_BUTTONS = [[
 
 @MTG33.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_text("Hey !! {message.from_user.mention} ... I am a pyrogram Bot Created By @MTG33"),
-    reply_markup=InlineKeyboardMarkup(START_BUTTONS)
+    await message.reply_text(
+        text="Hey !! {message.from_user.mention} ... I am a pyrogram Bot Created By @MTG33"),
+        reply_markup=InlineKeyboardMarkup(START_BUTTONS)
     )
 
 ABOUT_BUTTONS = [[
@@ -32,8 +33,7 @@ ABOUT_BUTTONS = [[
 @MTG33.on_message(filters.command("about"))
 async def about_cmd(client, message):
     await message.reply_photo(
-        photo="https://telegra.ph/file/a205efc04302b22bc358b.jpg",
-        caption="MY REPO: github/MTG33/trial \n MY DEPLOYER : @MTG33 👇",
+        text="MY REPO: github/MTG33/trial \n MY DEPLOYER : @MTG33 👇",
         reply_markup=InlineKeyboardMarkup(ABOUT_BUTTONS)
     )
 
