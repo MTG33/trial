@@ -26,19 +26,6 @@ async def start_cmd(client, message):
         reply_markup=InlineKeyboardMarkup(START_BUTTONS)
     )
 
-ABOUT_BUTTONS = [[
-   InlneKeyboardButton("🔥 OWNER 🔥", url="t.me/MTG33"
-]]
-
-@MTG33.on_message(filters.command("about"))
-async def about_cmd(client, message):
-    await message.reply_photo(
-        text="MY REPO: github/MTG33/trial \n MY DEPLOYER : @MTG33 👇",
-        reply_markup=InlineKeyboardMarkup(ABOUT_BUTTONS)
-    )
-
-
-
 
 print(" © BOT DEPLOYED © ")
 
